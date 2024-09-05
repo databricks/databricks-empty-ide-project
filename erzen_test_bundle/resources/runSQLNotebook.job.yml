@@ -1,0 +1,18 @@
+resources:
+  jobs:
+    runSQLNotebook:
+      trigger:
+        periodic:
+          unit: HOURS
+          interval: 1
+        pause_status: UNPAUSED
+      tasks:
+        - task_key: RunLegoNotebook
+          notebook_task:
+            source: WORKSPACE
+            notebook_path: ../LegoNotebook
+          min_retry_interval_millis: 0
+      queue:
+        enabled: true
+      permissions: []
+      name: runSQLNotebook
