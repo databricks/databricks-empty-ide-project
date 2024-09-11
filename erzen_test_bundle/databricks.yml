@@ -1,6 +1,6 @@
 # Databricks Asset Bundle configuration, more info here: https://docs.databricks.com/en/dev-tools/bundles/settings.html
 bundle:
-  name: "erzen_test_bundle"
+  name: "saad_test_bundle"
 
 include:
   - resources/*.yml
@@ -19,8 +19,8 @@ targets:
     workspace:
       host: https://e2-dogfood.staging.cloud.databricks.com
       # We always use /Users/erzen.kaja@databricks.com for all resources to make sure we only have a single copy.
-      root_path: /Users/erzen.kaja@databricks.com/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Users/saad.ansari@databricks.com/.bundle/${bundle.name}/${bundle.target}
     run_as:
       # This runs as erzen.kaja@databricks.com in production. We could also use a service principal here,
       # see https://docs.databricks.com/dev-tools/bundles/permissions.html.
-      user_name: erzen.kaja@databricks.com
+      user_name: saad.ansari@databricks.com
