@@ -1,0 +1,6 @@
+resources:
+  dashboards:
+    new_dash:
+      display_name: new_dash
+      file_path: ../src/new_dash.lvdash.json
+      warehouse_id: 02c6ce260d0e8ffe
